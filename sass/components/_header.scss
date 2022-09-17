@@ -1,0 +1,108 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ECECEC;
+  }
+
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 0;
+  }
+  
+.navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+.logo__header {
+    color: #000000;
+  }
+  
+.navigation__list {
+    display: flex;
+    margin-left: 93px;
+  }
+
+.navigation__item {
+    margin-left: auto;
+ &:not(:last-child) {
+    margin-right: 50px;
+  }}
+  
+.navigation__link {
+    position: relative;
+    color: var(--title-text-color);
+    transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus{
+      color: var(--accent-color);}
+  &::after {
+    content: '';
+    position: absolute;
+    width:100%;
+    display: block;
+    height: 4px;
+    left:0; bottom: -32px;
+    background-color:var(--accent-color);
+    opacity: 0;
+    transition: background-color 250ms var(--timing-function);
+    border-radius: 10px;
+  }
+  &:hover::after{
+    width: 100%;
+    opacity: 1;
+  }}
+  
+  .current::after{ width: 100%;
+    opacity: 1;
+  }
+
+
+  
+  .contacts__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    color: var(--main-text-color);
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+      color: var(--accent-color);
+    }}
+    
+  .contacts__list {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .contact__item + .item {
+    margin-left: 50px;
+  }
+  
+  .contacts__item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-text-color);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  .contacts__icon {
+    margin-right: 10px;
+    fill: var(--main-text-color);
+    transition: fill 250ms var(--timing-function);
+  }
+
+  .contacts__icon {
+    .contacts__link:hover & ,
+    .contacts__link:focus & {
+      fill: var(--accent-color)
+    }}
