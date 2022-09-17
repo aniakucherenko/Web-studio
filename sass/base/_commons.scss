@@ -32,6 +32,9 @@ html {
 
   img {
     display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
   .link {
@@ -63,22 +66,21 @@ html {
   }
 
   .container {
-    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
- @include mobile  {
+    width: 100%; 
+  @include mobile {
   width: 480px;
- }
- @include tablet{
+  }
+  @include tablet{
   width: 768px;
- }
- @include desktop{
+  }
+  @include desktop{
   max-width: 1200px;
  }
 }
-
 
   .visually-hidden {
     position: absolute;

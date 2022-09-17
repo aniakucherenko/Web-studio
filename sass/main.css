@@ -43,6 +43,9 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .link {
@@ -74,23 +77,26 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-}
-
-.container {
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  background-color: red;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    background-color: blue;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    background-color: green;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -292,6 +298,7 @@ img {
 
 .priority__wrap {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;

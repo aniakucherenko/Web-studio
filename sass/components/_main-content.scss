@@ -8,10 +8,11 @@ background-color: #ffffff;
   margin-right: 30px;
 }
 
+
+
 .priority__wrap{
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -20,21 +21,23 @@ background-color: #ffffff;
   justify-content: center;
   align-content: center;
   align-items: center; 
+  @include mobile {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    @include tablet{
+    width: calc ((100% - 30px) / 2) ;
+    }
+    @include desktop{
+      width: calc ((100% - 30px) / 4) ;
+   }
+
 }
 
 .priority__icon{
-  // width: 70px;
-  // height: 70px;
-width: 100%;
-@include mobile {
-  width: (calc ((100% - 30px)/4)) ;
-}
-@include tablet {
-  width: (calc ((100% - 30px)/2));
-}
-@include desktop {
-  width: 100%;
-}
+  width: 70px;
+  height: 70px;
 }
 
 .priority__title {

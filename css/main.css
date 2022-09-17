@@ -43,6 +43,9 @@ body {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .link {
@@ -74,11 +77,26 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -278,6 +296,7 @@ img {
 
 .priority__wrap {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -286,6 +305,21 @@ img {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .priority__wrap {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .priority__wrap {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .priority__wrap {
+    max-width: 1200px;
+  }
 }
 
 .priority__icon {
