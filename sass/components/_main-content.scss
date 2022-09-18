@@ -4,35 +4,50 @@
 background-color: #ffffff;
 }
 
-.list-item:not(:last-child) {
-  margin-right: 30px;
+.priority__list {
+list-style: none;
+@include tablet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@include desktop {
+  display: flex;
+}
 }
 
+.list-item:not(:last-child) {
+  @include mobile {
+  margin-bottom: 30px;
+        }}
 
+.list-item {
+ @include desktop {
+  width: 270px;
+}}
 
 .priority__wrap{
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
   justify-content: center;
   align-content: center;
   align-items: center; 
+  width: 100%;
   @include mobile {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: 450px;
     }
-    @include tablet{
-    width: calc ((100% - 30px) / 2) ;
+    @include tablet {
+      width: 354px ;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
     }
-    @include desktop{
-      width: calc ((100% - 30px) / 4) ;
+    @include desktop {
+      width: 270px;
    }
-
 }
 
 .priority__icon{
@@ -41,7 +56,6 @@ background-color: #ffffff;
 }
 
 .priority__title {
-  margin-bottom: 10px;
   margin-top: 0;
   padding: 0;
   font-weight: 700;
@@ -49,12 +63,37 @@ background-color: #ffffff;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-text-color);
+  @include mobile {
+    margin-bottom: 10px;
+    text-align: center;
+    }
+  @include tablet {
+    margin-bottom:10px;
+    text-align: left;
+  }
+  @include desktop {
+    margin-bottom: 10px;
+    text-align: left;
+  }
 }
 
+
 .priority__text {
-  margin-top: 0;
+  @include tablet {
+    width: 354px;
+      }
+  @include desktop {
+    width: 270px;
+  }}
+
+.priority__text:nth-last-child(-n + 2) {
+  @include tablet {
   margin-bottom: 0;
+  }
 }
+// .list-item:not(:last-child) {
+  //   @include desktop{
+  //   margin-right: 30px;
 
 /*---Чим ми займаємось----------------*////
 
