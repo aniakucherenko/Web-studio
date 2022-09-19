@@ -50,7 +50,7 @@ list-style: none;
    }
 }
 
-.priority__icon{
+.priority__icon {
   width: 70px;
   height: 70px;
 }
@@ -68,7 +68,7 @@ list-style: none;
     text-align: center;
     }
   @include tablet {
-    margin-bottom:10px;
+    margin-bottom: 10px;
     text-align: left;
   }
   @include desktop {
@@ -76,7 +76,6 @@ list-style: none;
     text-align: left;
   }
 }
-
 
 .priority__text {
   @include tablet {
@@ -98,25 +97,38 @@ list-style: none;
 /*---Чим ми займаємось----------------*////
 
 .specialization {
-  background-color: #ffffff;
+    display: none;
+  
+  @include desktop{
+    display: block;
+  }
 }
 
-.specialization__item{
+.specialization__list{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center; 
+  width: 100%;
+}
+.specialization__item {
     position: relative;
     background-color: #ffffff;
-    &:not(last-child){
-    margin-right: 30px;
-  }}
+  @include desktop {
+    width: calc((100% - 90px) / 3);
+ }
+}
 
-.specialization__wrap{
+.specialization__wrap {
     position: absolute;
-    width: 370px;
+    width: 360px;
     height: 70px;
     background-color: rgba(47, 48, 58, 0.8);
-    top: 224px;
+    top: 216px;
   }
 
-.specialization__name{
+.specialization__name {
     font-family: Roboto;
     font-weight:700;
     font-size: 16px;

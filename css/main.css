@@ -6,6 +6,9 @@
   --accent-color: #2196f3;
   --primary-background-color: #2f303a;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4));
 }
 
 html {
@@ -238,31 +241,80 @@ img {
 
 .hero__background {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-image.jpg");
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 480px) {
+  .hero__background {
+    background-image: var(--bg-gradient), url("../images/hero-bg-mob.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__background {
+    background-image: var(--bg-gradient), url("../images/hero-bg-tab.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__background {
+    background-image: var(--bg-gradient), url("../images/hero-bg-desk.jpg");
+  }
+}
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  width: 696px;
-  margin: 0 auto 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.37;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+    font-size: 26;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 26;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    width: 696px;
+    line-height: 1.37;
+    margin: 0 auto 30px;
+  }
 }
 
 .hero__button {
@@ -395,23 +447,39 @@ img {
 
 /*---Чим ми займаємось----------------*/
 .specialization {
-  background-color: #ffffff;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .specialization {
+    display: block;
+  }
+}
+
+.specialization__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .specialization__item {
   position: relative;
   background-color: #ffffff;
 }
-.specialization__item:not(last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .specialization__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .specialization__wrap {
   position: absolute;
-  width: 370px;
+  width: 360px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
-  top: 224px;
+  top: 216px;
 }
 
 .specialization__name {
@@ -682,8 +750,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -703,7 +769,7 @@ img {
 }
 
 .portfolio__description {
-  margin: 0 auto;
+  flex-grow: 1;
   border: 1px solid #EEEEEE;
   border-top: none;
 }
@@ -717,9 +783,14 @@ img {
     padding-bottom: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio__description {
+    padding: 20px 24px;
+  }
+}
 
 @media screen and (min-width: 768px) {
-  .portfolio__description:nth-child(1) {
+  .portfolio__description:first-child {
     padding-bottom: 56px;
   }
 }
@@ -741,7 +812,7 @@ img {
   margin: 0 0 4px 0;
   background-color: #FFFFFF;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
@@ -756,7 +827,13 @@ img {
 
 .portfolio__link {
   text-decoration: none;
-  display: block;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
 }
 
 .portfolio__link:hover .overlay-text,

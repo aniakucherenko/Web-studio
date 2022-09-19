@@ -55,14 +55,14 @@
     <main>
 
         <!--HERO----------------------------------------------------------------->
-        <!-- <div class="hero__background">
-        <section class="hero">
+        <div class="hero__background">
+        <section class="hero"> 
             <div class="container">
             <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
             <button data-modal-open type="button" class="hero__button">Замовити послугу</button>
             </div>
             </section>
-        </div> -->
+        </div>
           <section class="section priorities">
             <div class="container">
             <h2 class="visually-hidden">Пріорітети</h2>
@@ -107,10 +107,10 @@
             </div>
         </section>
         <!---Чим ми займаємось-------------------------------------------------------->
-        <!-- <section class="section specialization">
+        <section class="section specialization">
             <div class="container">
            <h2 class="title">Чим ми займаємося</h2>
-           <ul class="list">
+           <ul class="specialization__list">
            <li class="specialization__item"><img src="images/code.jpg" alt="coding" width="370" height ="294"> 
         <div class="specialization__wrap">
             <p class="specialization__name">Десктопні додатки</p>
@@ -128,13 +128,41 @@
         </li>
             </ul>
             </div>
-       </section> -->
+       </section>
        <!-- -Наша команда-------------------------------------------------------------->
         <section class="section team">
             <div class="container">
             <h2 class="team__title title">Наша команда</h2>
             <ul class="team__list">
-             <li class="team__item"><img class="image" src="images/img1.jpg" alt="team-member1" width="270" height ="260"/>
+             <li class="team__item">
+                <picture>
+                    <source
+                srcset="
+                ./images/team-1-desk.jpg 1x,
+                ./images/team-1-desk-2x.jpg 2x
+                " 
+                media="(min-width: 1200px)"
+                />
+                <source
+                srcset="
+                ./images/team-1-tab.jpg 1x,
+                ./images/team-1-tab-2x.jpg 2x
+                " 
+                media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                ./images/team-1-mob.jpg 1x,
+                ./images/team-1-mob-2x.jpg 2x
+                " 
+                media="(min-width: 320px)"
+                />
+                <img
+                src="./images/team-1-desk.jpg"
+                 alt="team-member1"
+                  width="270"
+                />
+            </picture>
                <div class="team__wrap">
                    <h3 class="team__name">Ігор Дем'яненко</h3>
                    <p class="team__text">Product Designer</p>
@@ -173,8 +201,35 @@
             </li>
         
              <li class="team__item">
-                <img class="image" src="images/img2.jpg" alt="team-member2" width="270" height ="260"/>
-               <div class="team__wrap">
+                <picture>
+                    <source
+                srcset="
+                ./images/team-2-desk.jpg 1x,
+                ./images/team-2-desk-2x.jpg 2x
+                " 
+                media="(min-width: 1200px)"
+                />
+                <source
+                srcset="
+                ./images/team-2-tab.jpg 1x,
+                ./images/team-2-tab-2x.jpg 2x
+                " 
+                media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                ./images/team-2-mob.jpg 1x,
+                ./images/team-2-mob-2x.jpg 2x
+                " 
+                media="(min-width: 320px)"
+                />
+                <img
+                src="./images/team-2-desk.jpg"
+                 alt="team-member1"
+                  width="270"
+                />
+            </picture>
+             <div class="team__wrap">
                    <h3 class="team__name">Ольга Рєпіна</h3>
                    <p class="team__text">Frontend Developer</p>
                    <ul class="socials__list list">
@@ -210,8 +265,36 @@
                    </ul>
                </div></li>
            
-             <li class="team__item"><img class="image" src="images/img3.jpg" alt="team-member3" width="270" height ="260"/>
-               <div class="team__wrap">
+             <li class="team__item">
+                <picture>
+                    <source
+                srcset="
+                ./images/team-3-desk.jpg 1x,
+                ./images/team-3-desk-2x.jpg 2x
+                " 
+                media="(min-width: 1200px)"
+                />
+                <source
+                srcset="
+                ./images/team-3-tab.jpg 1x,
+                ./images/team-3-tab-2x.jpg 2x
+                " 
+                media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                ./images/team-3-mob.jpg 1x,
+                ./images/team-3-mob-2x.jpg 2x
+                " 
+                media="(min-width: 320px)"
+                />
+                <img
+                src="./images/team-1-desk.jpg"
+                 alt="team-member3"
+                  width="270"
+                />
+            </picture>
+                   <div class="team__wrap">
                    <h3 class="team__name">Микола Тарасов</h3>
                    <p class="team__text">Marketing</p>
                    <ul class="socials__list list">
@@ -248,8 +331,35 @@
                </div></li>
             
              <li class="team__item">
-                <img class="image" src="images/img4.jpg" alt="team-member4" width="270" height ="260"/>
-               <div class="team__wrap">
+                <picture>
+                    <source
+                srcset="
+                ./images/team-4-desk.jpg 1x,
+                ./images/team-4-desk-2x.jpg 2x
+                " 
+                media="(min-width: 1200px)"
+                />
+                <source
+                srcset="
+                ./images/team-4-tab.jpg 1x,
+                ./images/team-4-tab-2x.jpg 2x
+                " 
+                media="(min-width: 768px)"
+                />
+                <source
+                srcset="
+                ./images/team-4-mob.jpg 1x,
+                ./images/team-4-mob-2x.jpg 2x
+                " 
+                media="(min-width: 320px)"
+                />
+                <img
+                src="./images/team-1-desk.jpg"
+                 alt="team-member4"
+                  width="270"
+                />
+            </picture>
+                   <div class="team__wrap">
                    <h3 class="team__name">Михайло Єрмаков</h3>
                    <p class="team__text">UI Designer</p>
                    <ul class="socials__list list">
@@ -413,7 +523,7 @@
     <body>
 
 <!---MODAL---------------------------------------------------->
-        <!-- <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop is-hidden" data-modal>
 <div class="modal">
 <button class="modal__button--close" data-modal-close>
     <svg class="modal__icon--close" width="20" height="20">
@@ -504,7 +614,7 @@ class="privacy">
 </form>
 </div>
   </div>
-        <script src="./js/modal.js"></script>  -->
+        <script src="./js/modal.js"></script> 
       </body>
 </body>
 </html>
