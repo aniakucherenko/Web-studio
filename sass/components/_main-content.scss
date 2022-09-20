@@ -2,6 +2,16 @@
 
 .priorities {
 background-color: #ffffff;
+padding-top: 20px;
+@include mobile {
+  padding-top: 60px;
+}
+@include tablet {
+  padding-top: 60px;
+}
+@include desktop {
+  padding-top: 94px;
+}
 }
 
 .priority__list {
@@ -155,6 +165,7 @@ list-style: none;
   }
 
   .team__title {
+    margin-top: 20px;
     @include mobile {
       margin-top: 0;
       margin-bottom: 30px;
@@ -265,6 +276,7 @@ list-style: none;
 
 .clients{
   background-color: #FFFFFF;
+  
 }
 
 .clients__title {
@@ -333,3 +345,8 @@ list-style: none;
   fill: var(--accent-color)
 }}
 
+.header__connect {
+  @include tablet {
+    display: none;
+  }
+}

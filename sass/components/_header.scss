@@ -1,25 +1,43 @@
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ECECEC;
+  height: 60px;
+  @include tablet {
+    height: 80px;
+  }
   }
 
 .header__container {
-    display: flex;
-    align-items: center;
-    height: 80px;
-    margin-bottom: 0;
+    @include mobile {
+     justify-content: space-between;
+      }
+    @include tablet {
+      display: flex;
+      justify-content: baseline;
+      height: 80px;
+      margin-bottom: 0;
+    }  
+    @include desktop {
+      display: flex;
+      justify-content: space-around;
+    }
   }
   
+.logo__link {
+  font-size: 24px;
+   margin: 16px 15px;
+   @include tablet {
+    margin: 26px 15px;
+   }
+}
 .navigation {
-    display:none;
-    // display: flex;
-    // align-items: center;
+   display: none;
+   @include tablet {
+    display: flex;
+    }
   }
 
 /*---Мобільне меню----------------*/
-.menu-open{
-  margin-left: auto;
-}
 
 .mob-menu {
   position: fixed;
@@ -31,6 +49,11 @@
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.mob-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 
 .mob-container {
   height: 100%;
@@ -41,6 +64,7 @@
   margin-right: 40px;
   overflow: auto;
 }
+
 .menu-close {
   margin-left: auto;
   display: block;
@@ -48,9 +72,16 @@
   background-color: transparent;
   border: none;
 }
-// .mob-menu-top{
-// margin-bottom: 302px;
-// }
+.menu-open {
+  margin-left: auto;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+.header__connect{
+  display: flex;
+  justify-content: space-between;
+}
 
 .mob-menu-list{
 margin-bottom: 64px;
@@ -78,7 +109,7 @@ line-height: 1.7;
 color: #757575;
 margin-bottom: 64px;
 }
-.mob-soc-list{
+.mob-soc-list {
   display: flex;
 }
 
@@ -102,7 +133,7 @@ position: relative;
   margin-bottom: 64px;
 }
 
-.mob-soc-link{
+.mob-soc-link {
 font-weight: 500;
 font-size: 18px;
 line-height: 1.2;
@@ -112,6 +143,8 @@ color: var(--accent-color);
   color: var(--accent-color);
 }
 
+
+/*---------------------------------------*/
   
 .logo__header {
     color: #000000;
@@ -120,6 +153,10 @@ color: var(--accent-color);
 .navigation__list {
     display: flex;
     margin-left: 93px;
+    @include tablet {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
   }
 
 .navigation__item {
@@ -141,7 +178,7 @@ color: var(--accent-color);
     width:100%;
     display: block;
     height: 4px;
-    left:0; bottom: -32px;
+    left:0; bottom: -28px;
     background-color:var(--accent-color);
     opacity: 0;
     transition: background-color 250ms var(--timing-function);
@@ -150,41 +187,49 @@ color: var(--accent-color);
   &:hover::after{
     width: 100%;
     opacity: 1;
-  }}
+}
+}
   
   .current::after{ width: 100%;
     opacity: 1;
   }
-
-
   
   .contacts__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; 
     color: var(--main-text-color);
     transition: color 250ms var(--timing-function);
     &:hover,
     &:focus{
       color: var(--accent-color);
-    }}
+    }
+    @include desktop {
+     padding-top: 32px;
+     padding-bottom: 32px; 
+    }
+  }
     
   .contacts__list {
     display: none;
-    // display: flex;
-    // margin-left: auto;
-    // gap: 30px;
-    // align-items: center;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 15px;
+      padding-top: 21px;
+    }
+    @include desktop {
+      flex-direction: row;
+    }
   }
   
   .contact__item + .item {
-    margin-left: 50px;
+    // margin-left: 50px;
   }
   
   .contacts__item {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     color: var(--main-text-color);
     align-items: center;
     justify-content: center;
@@ -192,6 +237,13 @@ color: var(--accent-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    @include tablet {
+    padding-bottom:10px;
+    font-size: 12px;
+    }
+    @include desktop {
+      margin-right: 30px;
+    }
   }
 
   .contacts__icon {

@@ -5,32 +5,31 @@
   outline: 1px solid black;
   background-size: cover;
   background-position: center;
-
-  @include mobile {
-    background-image: var(--bg-gradient),
-    url("../images/hero-bg-mob.jpg");
+  background-image: var(--bg-gradient),
+  url("../images/hero-bg-mob.jpg");
   @media retina {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-mob-2x.jpg");
   }
-    }
   @include tablet {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-tab.jpg");
+  }
     @media retina {
       background-image: var(--bg-gradient),
       url("../images/hero-bg-tab-2x.jpg");
     }
-  }
+  
   @include desktop {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-desk.jpg");
+  }
   @media retina {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-desk-2x.jpg");
   }
-    }
-  }
+}
+  
 
 .hero {
     text-align: center;
@@ -55,6 +54,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin: 0 auto;
+    width: 300px;
    @include mobile {
    width: 360px;
    font-size: 26;
