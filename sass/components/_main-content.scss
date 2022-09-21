@@ -108,9 +108,10 @@ list-style: none;
 
 .specialization {
     display: none;
-  
+    
   @include desktop{
     display: block;
+    background-color: #ffffff;
   }
 }
 
