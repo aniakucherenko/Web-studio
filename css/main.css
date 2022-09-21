@@ -461,6 +461,11 @@ img {
     background-image: var(--bg-gradient), url("../images/hero-bg-tab-2x.jpg");
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__background {
+    background-image: var(--bg-gradient), url("../images/hero-bg-desk.jpg");
+  }
+}
 @media retina {
   .hero__background {
     background-image: var(--bg-gradient), url("../images/hero-bg-desk-2x.jpg");
