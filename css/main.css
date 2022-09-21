@@ -446,7 +446,7 @@ img {
   background-position: center;
   background-image: var(--bg-gradient), url("../images/hero-bg-mob.jpg");
 }
-@media retina {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__background {
     background-image: var(--bg-gradient), url("../images/hero-bg-mob-2x.jpg");
   }
@@ -456,7 +456,7 @@ img {
     background-image: var(--bg-gradient), url("../images/hero-bg-tab.jpg");
   }
 }
-@media retina {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__background {
     background-image: var(--bg-gradient), url("../images/hero-bg-tab-2x.jpg");
   }
@@ -466,7 +466,7 @@ img {
     background-image: var(--bg-gradient), url("../images/hero-bg-desk.jpg");
   }
 }
-@media retina {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__background {
     background-image: var(--bg-gradient), url("../images/hero-bg-desk-2x.jpg");
   }
@@ -996,12 +996,12 @@ img {
   .portfolio__button {
     min-width: 73px;
     padding: 6px 22px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__button {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 

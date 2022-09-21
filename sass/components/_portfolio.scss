@@ -2,6 +2,9 @@
   background-color: #FFFFFF;
 }
 
+.portfolio__container{
+  
+}
 .portfolio-button__list{
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +15,10 @@
   margin-top: 0;
   justify-content: center;
 }
+//  @include desktop {
+//   margin-top: 30px;
+
+//  }
 }
 
 .portfolio__button:not(last-item){
@@ -41,10 +48,10 @@
     @include tablet {
       min-width: 73px;
       padding: 6px 22px;
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
     @include desktop {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
   .portfolio__button:not(:last-child){

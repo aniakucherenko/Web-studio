@@ -7,7 +7,7 @@
   background-position: center;
   background-image: var(--bg-gradient),
   url("../images/hero-bg-mob.jpg");
-  @media retina {
+  @include retina {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-mob-2x.jpg");
   }
@@ -15,7 +15,7 @@
     background-image: var(--bg-gradient),
     url("../images/hero-bg-tab.jpg");
   }
-    @media retina {
+    @include retina {
       background-image: var(--bg-gradient),
       url("../images/hero-bg-tab-2x.jpg");
     }
@@ -23,7 +23,7 @@
     background-image: var(--bg-gradient),
     url("../images/hero-bg-desk.jpg");
   }
-  @media retina {
+  @include retina {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-desk-2x.jpg");
   }
