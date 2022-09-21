@@ -107,11 +107,11 @@ list-style: none;
 /*---Чим ми займаємось----------------*////
 
 .specialization {
-    display: none;
-    
+    display: none;  
   @include desktop{
     display: block;
     background-color: #ffffff;
+    padding-bottom: 94px;
   }
 }
 
