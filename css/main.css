@@ -196,7 +196,6 @@ img {
   top: 0;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
   padding-bottom: 48px;
 }
 
@@ -255,10 +254,15 @@ img {
 
 .mob-menu-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
   margin-bottom: 32px;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu-tel {
+    font-size: 34px;
+  }
 }
 
 .mob-menu-mail {
@@ -271,6 +275,7 @@ img {
 
 .mob-soc-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-soc-item {
@@ -280,13 +285,15 @@ img {
   margin-right: 20px;
 }
 
-.mob-soc-item:not(:last-child)::after {
-  position: absolute;
-  content: " ";
-  right: -10px;
-  width: 1px;
-  height: 20px;
-  background-color: rgba(33, 33, 33, 0.2);
+@media screen and (min-width: 480px) {
+  .mob-soc-item:not(:last-child)::after {
+    position: absolute;
+    content: " ";
+    right: -10px;
+    width: 1px;
+    height: 20px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
 }
 
 .mob-menu-connect {
