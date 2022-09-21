@@ -20,10 +20,10 @@
       url("../images/hero-bg-tab-2x.jpg");
     }
   
-  @include desktop {
-    background-image: var(--bg-gradient),
-    url("../images/hero-bg-desk.jpg");
-  }
+  // @include desktop {
+  //   background-image: var(--bg-gradient),
+  //   url("../images/hero-bg-desk.jpg");
+  // }
   @media retina {
     background-image: var(--bg-gradient),
     url("../images/hero-bg-desk-2x.jpg");

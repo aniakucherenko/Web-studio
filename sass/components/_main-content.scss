@@ -115,6 +115,16 @@ list-style: none;
   }
 }
 
+.specialization__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 .specialization__list{
   display: flex;
   gap: 30px;
