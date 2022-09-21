@@ -163,7 +163,11 @@ color: var(--accent-color);
     margin-left: auto;
  &:not(:last-child) {
     margin-right: 50px;
-  }}
+  }
+  @include desktop {
+  font-size: 14px;
+}
+}
   
 .navigation__link {
     position: relative;
@@ -219,6 +223,7 @@ color: var(--accent-color);
     }
     @include desktop {
       flex-direction: row;
+      padding-top: 0;
     }
   }
   
@@ -243,6 +248,7 @@ color: var(--accent-color);
     }
     @include desktop {
       margin-right: 30px;
+      font-size: 14px;
     }
   }
 

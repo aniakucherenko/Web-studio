@@ -320,6 +320,11 @@ img {
 .navigation__item:not(:last-child) {
   margin-right: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .navigation__item {
+    font-size: 14px;
+  }
+}
 
 .navigation__link {
   position: relative;
@@ -382,6 +387,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__list {
     flex-direction: row;
+    padding-top: 0;
   }
 }
 
@@ -404,6 +410,7 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__item {
     margin-right: 30px;
+    font-size: 14px;
   }
 }
 
@@ -1141,6 +1148,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
+    max-width: 1200px;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
@@ -1163,7 +1171,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__content {
     flex-direction: row;
-    justify-content: space-around;
+    margin: 0;
   }
 }
 
@@ -1175,6 +1183,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     margin-right: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -1182,6 +1191,11 @@ img {
   display: block;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    margin: 0;
+  }
 }
 
 .logo__footer {
@@ -1204,6 +1218,12 @@ img {
 .footer__item {
   margin: 0 auto;
   justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__item {
+    margin: 0;
+    justify-content: flex-start;
+  }
 }
 
 .social__link {
@@ -1228,6 +1248,11 @@ img {
 }
 .contacts:hover, .contacts:focus {
   color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    justify-content: flex-start;
+  }
 }
 
 .address {
@@ -1317,6 +1342,16 @@ img {
   }
 }
 
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    flex-direction: row;
+  }
+}
+
 .subscribe__box {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1366,7 +1401,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscribe__button {
-    margin-top: 36px;
+    margin-left: 12px;
   }
 }
 

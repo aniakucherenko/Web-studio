@@ -19,7 +19,7 @@
     width: 100%;
     justify-content: center;
     @include desktop {
-      // max-width: 1200px;
+      max-width: 1200px;
       flex-direction: row;
       justify-content: space-around;
       align-items: baseline;
@@ -27,11 +27,9 @@
       padding-left: 15px;
       margin-left: auto;
       margin-right: auto;
-
+    } 
     }
-   
-    }
-.footer__content{
+.footer__content {
   @include tablet {
     display: flex;
     flex-direction: row;
@@ -42,8 +40,7 @@
   @include desktop {
     // margin: -15px;
     flex-direction: row;
-    // flex-wrap: nowrap;
-    justify-content: space-around;
+    margin: 0;
   }
     }
 .footer__wrapper {
@@ -53,17 +50,18 @@
 
   @include desktop {
     margin-right:70px;
-    
+    align-items: flex-start;
   }
 }
 
-// .footer__wrapper{
-//       margin-right: 70px;
-//     
+     
 .footer__link {
       display: block;
       margin: 0 auto;
       padding-bottom: 20px;
+      @include desktop {
+        margin: 0;
+      }
     }
 
 .logo__footer {
@@ -84,6 +82,11 @@
 .footer__item {
   margin: 0 auto;
   justify-content: center;
+  @include desktop {
+    margin: 0;
+    justify-content: flex-start;
+
+  }
 }
 
 .social__link{
@@ -108,7 +111,11 @@
 &:hover,
 &:focus {
    color: var(--accent-color);
- }}
+ }
+ @include desktop {
+  justify-content: flex-start;
+ }
+}
 
 .address{
     font-style: normal;
@@ -186,9 +193,24 @@
       }
     }
     .footer__join{
+      // @include tablet {
+      //   display: flex;
+      //   flex-direction: column;
+      // }
       @include desktop {
         margin-right:12px;
       }
+    }
+
+    .subscribe__form {
+      display: flex;
+        flex-direction: column;
+      
+      @include desktop{
+        flex-direction: row;
+      }
+     
+      // flex-direction: row-reverse;
     }
 
     .subscribe__box {
@@ -232,8 +254,12 @@
       display: block;
       justify-content: center;
       @include desktop {
-        margin-top: 36px;
+      margin-left: 12px;
+        // margin-top: 36px;
       }
+    }
+    .subscribe__title{
+
     }
     .subscribe__text {
       position: relative;
