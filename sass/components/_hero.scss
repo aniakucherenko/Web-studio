@@ -15,7 +15,7 @@
     background-image: var(--bg-gradient),
     url("../images/hero-bg-tab.jpg");
   }
-    @include retina {
+  @include retina {
       background-image: var(--bg-gradient),
       url("../images/hero-bg-tab-2x.jpg");
     }

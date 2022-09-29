@@ -15,10 +15,6 @@ margin-top:30px;
   margin-top: 0;
   justify-content: center;
 }
-//  @include desktop {
-//   margin-top: 30px;
-
-//  }
 }
 
 .portfolio__button:not(last-item){
@@ -99,7 +95,6 @@ margin-top:30px;
 
 
   .portfolio__description {
-    // margin: 0 auto;
     flex-grow: 1;
     border: 1px solid #EEEEEE;
     border-top: none;
