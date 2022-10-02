@@ -100,9 +100,6 @@ list-style: none;
   margin-bottom: 0;
   }
 }
-// .list-item:not(:last-child) {
-  //   @include desktop{
-  //   margin-right: 30px;
 
 /*---Чим ми займаємось----------------*////
 
@@ -162,7 +159,7 @@ list-style: none;
   }
 
   
-  /*---НАША КОМАНДА--------------------------------*/
+  /*---НАША КОМАНДА---*/
   
   .team {
     background-color: #f5f4fa;
@@ -283,7 +280,7 @@ list-style: none;
       fill: white;
     }}
 
-    /*---ПОСТІЙНІ КЛІЄНТИ-----------------------------------------*/
+    /*---ПОСТІЙНІ КЛІЄНТИ---*/
 
 .clients{
   background-color: #FFFFFF;
@@ -331,10 +328,6 @@ list-style: none;
  }
 }
 
-// .clients__item:not(:last-child){
-//   margin-right: 30px;
-//   }
-  
 .clients__link{
   display: flex;
   height:92px;
