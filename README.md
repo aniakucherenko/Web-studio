@@ -1,18 +1,1 @@
-@include mobile {
-
-}
-@include tablet {
-  
-}
-@include desktop {
-  
-}
-
-  .list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
- }
-
- 
+https://aniakucherenko.github.io/goit-markup-hw-08/ 
